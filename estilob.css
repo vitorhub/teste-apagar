@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+
+.logo{
+    width: 30px;
+    border-radius: 50%;
+}
+.cabecalho{
+    background: rgba(24, 45, 70, 0.3);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+}
+.cabecalho nav ul{
+    display: flex;
+    margin-right: 40px;
+}
+.cabecalho nav ul li{
+    text-transform: uppercase;
+    font-weight: 1000;
+    margin: 0 10px;
+    border: 2px solid #E24800;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+body{
+    background-image: url("imagens/praia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #E24800;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width:375px){
+    body{
+        width: 375px;
+        background-size: 375px 100%;
+        position: relative;
+    }
+    .container{
+        position: relative;
+    }
+    .cabecalho nav{
+        position: relative;
+    }
+    .hamburguer{
+        width: 30px;
+        height: 2px;
+        display: block;
+        border: 2px solid blue;
+    }
+    .hamburguer::after{
+        content: "";
+        border: 2px solid crimson;
+        display: block;
+        margin-top: 5px;        
+    }
+    .cabecalho nav ul{
+        display: inline-block;
+        position: relative;
+    }
+
+}
